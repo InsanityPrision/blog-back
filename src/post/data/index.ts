@@ -1,4 +1,4 @@
-import Post from "../Post/Post";
+import Post from "../Post/Post.js";
 
 const post1 = new Post(
   "I like cats",

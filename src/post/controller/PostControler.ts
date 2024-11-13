@@ -1,6 +1,6 @@
 import { type Request, type Response } from "express";
 import { type PostControllerStructure } from "./types";
-import posts from "../data";
+import posts from "../data/index.js";
 
 class PostController implements PostControllerStructure {
   get(_req: Request, res: Response): void {
