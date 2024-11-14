@@ -4,6 +4,7 @@ const jestConfig: JestConfigWithTsJest = {
   verbose: true,
   rootDir: "src",
   preset: "ts-jest",
+  resolver: "ts-jest-resolver",
   ...createDefaultPreset(),
 };
 
