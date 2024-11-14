@@ -1,13 +1,15 @@
 import { type Request, type Response } from "express";
 import { type PostControllerStructure } from "./types";
-import posts from "../data/index.js";
+import type Post from "../Post/Post";
 
 class PostController implements PostControllerStructure {
-  get(_req: Request, res: Response): void {
+  constructor(private readonly posts: Post[]) {}
+
+  get = (_req: Request, res: Response): void => {
     const statusCode = 200;
 
-    res.status(statusCode).json({ posts });
-  }
+    res.status(statusCode).json({ posts: this.posts });
+  };
 }
 
 export default PostController;
