@@ -1,4 +1,4 @@
-import { Request, Response } from "express";
+import { type Request, type Response } from "express";
 import Post from "../../Post/Post";
 import PostController from "../PostControler";
 

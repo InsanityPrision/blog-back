@@ -1,3 +1,4 @@
+import crypto from "crypto";
 import { type PostStructure } from "./types";
 
 class Post implements PostStructure {
