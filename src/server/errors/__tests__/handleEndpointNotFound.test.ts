@@ -8,7 +8,7 @@ describe("Given the handleEndpointNotFound function", () => {
       const statusCode = 404;
       const message = "Endpoint not found";
 
-      const error = new ServerError(statusCode, message);
+      const error = new ServerError(message, statusCode);
 
       const req = {};
       const res = {};
