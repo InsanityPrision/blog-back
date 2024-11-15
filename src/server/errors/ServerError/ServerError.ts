@@ -2,8 +2,8 @@ import { type ServerErrorStructure } from "./types";
 
 class ServerError extends Error implements ServerErrorStructure {
   constructor(
-    public statusCode: number,
     message: string,
+    public statusCode?: number,
   ) {
     super(message);
   }
