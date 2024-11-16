@@ -4,5 +4,5 @@ export interface PostStructure {
   imageUrl: string;
   content: string;
   author: string;
-  date: string;
+  date: Date;
 }
