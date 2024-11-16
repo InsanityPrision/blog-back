@@ -3,7 +3,7 @@ import { type PostStructure } from "./types";
 
 class Post implements PostStructure {
   public id: string;
-  public date: string;
+  public date: Date;
 
   constructor(
     public title: string,
@@ -13,7 +13,7 @@ class Post implements PostStructure {
   ) {
     this.id = crypto.randomUUID();
 
-    this.date = Date();
+    this.date = new Date(Date.now());
   }
 }
 
