@@ -10,6 +10,8 @@ app.use(morgan("dev"));
 
 app.use(cors());
 
+app.use(express.json());
+
 app.use("/posts", postRouter);
 
 app.use(handleEndpointNotFound);
