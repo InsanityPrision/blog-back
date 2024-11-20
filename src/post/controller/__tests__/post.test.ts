@@ -4,9 +4,15 @@ import PostController from "../PostControler";
 
 describe("Given the method post of PostController", () => {
   describe("When it receives a request", () => {
-    const post1 = new Post("I like cats", "", "", "LoverCats04");
+    const post1 = new Post("I like cats", "", "LoverCats04", {
+      imageUrl: "",
+      alternativeText: "",
+    });
 
-    const post2 = new Post("I hate cats", "", "", "HaterCats04");
+    const post2 = new Post("I hate cats", "", "HaterCats04", {
+      imageUrl: "",
+      alternativeText: "",
+    });
 
     const postController = new PostController([post1, post2]);
 

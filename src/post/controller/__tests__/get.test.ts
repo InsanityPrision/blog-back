@@ -9,17 +9,17 @@ afterEach(() => {
 describe("Given the method get from PostController class", () => {
   describe("When it's receives a response", () => {
     const postCatLover = new Post(
-      "I LOVE CATS",
-      "",
-      "i like cats so much",
-      "cat4ever",
+      "I love potatoes",
+      "i like potatoes with katchup so much",
+      "potatoes4ever",
+      { imageUrl: "", alternativeText: "" },
     );
 
     const postCatHater = new Post(
-      "I HATE CATS",
-      "",
-      "i hate cats so much",
+      "I hate potatoes",
+      "I hate potatoes with katchup, is very disgusting",
       "catsNever03",
+      { imageUrl: "", alternativeText: "" },
     );
 
     const posts: Post[] = [postCatLover, postCatHater];

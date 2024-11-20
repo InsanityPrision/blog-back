@@ -9,7 +9,8 @@
     "prepare": "husky",
     "start": "node dist",
     "test": "jest",
-    "test:dev": "jest --watchAll"
+    "test:dev": "jest --watchAll",
+    "test:coverage": "jest --coverage"
   },
   "keywords": [],
   "author": "",
