@@ -13,9 +13,13 @@ class PostController implements PostControllerStructure {
   };
 
   post = (req: Request, res: Response): void => {
-    const { title, author, content, imageUrl } = req.body as Post;
+    const { title, author, content, imageUrl, alternativeText } =
+      req.body as Post;
 
-    const newPost = new Post(title, imageUrl, content, author);
+    const newPost = new Post(title, content, author, {
+      imageUrl,
+      alternativeText,
+    });
 
     posts.push(newPost);
 
