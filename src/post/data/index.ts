@@ -6,7 +6,7 @@ const post1 = new Post(
   "LoverCats04",
   {
     imageUrl: "/gato.webp",
-    alternativeText: "gato blanco con manchas negras mirando a camara",
+    alternativeText: "white cat looking at camera",
   },
 );
 
@@ -14,9 +14,9 @@ const post2 = new Post(
   "I hate cats",
   "I have to admit, cats and I don’t always see eye to eye. Sure, they have their moments, but their aloof nature and unpredictable attitudes can be frustrating. Unlike dogs, who greet you with uncontainable excitement and endless loyalty, cats often act like they own the place (and maybe they do). They choose when to give affection and when to ignore you completely, making them hard to read and sometimes cold. Dogs, on the other hand, are warm, loyal, and always eager to be by your side, ready for any adventure or just a cuddle. Dogs bring joy, energy, and an unconditional love that I find unbeatable",
   "HaterCats04",
-  { imageUrl: "/perro.webp", alternativeText: "perro mirando a camara" },
+  { imageUrl: "/perro.webp", alternativeText: "brown dog looking at camera" },
 );
 
-const posts = [post1, post2];
+const posts: Post[] = [post1, post2];
 
 export default posts;
