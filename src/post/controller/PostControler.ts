@@ -1,7 +1,6 @@
 import { type Request, type Response } from "express";
 import { type PostControllerStructure } from "./types";
 import Post from "../Post/Post.js";
-import posts from "../data/index.js";
 
 class PostController implements PostControllerStructure {
   constructor(private readonly posts: Post[]) {}
@@ -21,7 +20,7 @@ class PostController implements PostControllerStructure {
       alternativeText,
     });
 
-    posts.push(newPost);
+    this.posts.push(newPost);
 
     res.status(201).json({ post: newPost });
   };
