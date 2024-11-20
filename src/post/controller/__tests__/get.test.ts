@@ -43,7 +43,7 @@ describe("Given the method get from PostController class", () => {
     test("Thent it should call json method with the post 'I LOVE CATS' and 'I HATE CATS'", () => {
       postController.get(req as Request, res as Response);
 
-      expect(res.json).toHaveBeenCalledWith({ posts });
+      expect(res.json).toHaveBeenCalledWith(posts);
     });
   });
 });
