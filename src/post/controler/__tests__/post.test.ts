@@ -1,6 +1,6 @@
 import { type Request, type Response } from "express";
 import Post from "../../Post/Post";
-import PostController from "../PostControler";
+import PostControler from "../PostsControler";
 
 describe("Given the method post of PostController", () => {
   describe("When it receives a request", () => {
@@ -14,7 +14,7 @@ describe("Given the method post of PostController", () => {
       alternativeText: "",
     });
 
-    const postController = new PostController([post1, post2]);
+    const postController = new PostControler([post1, post2]);
 
     const req: Partial<Request> = {
       body: {},

@@ -33,7 +33,7 @@ describe("Given the handleErrors middleware", () => {
   });
 
   describe("When receives a error with message 'TypeError'", () => {
-    const error = new ServerError("Server error", 500);
+    const error = new Error("Server error");
 
     test("Then it should call status method with status code 500", () => {
       handleErrors(error, req as Request, res as Response, next);
