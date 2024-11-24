@@ -1,6 +1,6 @@
 import { type Request, type Response } from "express";
 import Post from "../../Post/Post";
-import PostController from "../PostControler";
+import PostControler from "../PostsControler";
 
 afterEach(() => {
   jest.clearAllMocks();
@@ -24,7 +24,7 @@ describe("Given the method get from PostController class", () => {
 
     const posts: Post[] = [postCatLover, postCatHater];
 
-    const postController = new PostController(posts);
+    const postController = new PostControler(posts);
 
     const req = {};
     const res: Partial<Response> = {
