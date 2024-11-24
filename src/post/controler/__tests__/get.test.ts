@@ -6,7 +6,7 @@ afterEach(() => {
   jest.clearAllMocks();
 });
 
-describe("Given the method get from PostController class", () => {
+describe("Given the method get from PostsControler class", () => {
   describe("When it's receives a response", () => {
     const postCatLover = new Post(
       "I love potatoes",
