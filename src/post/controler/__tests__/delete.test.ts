@@ -18,7 +18,7 @@ describe("Given the method delete from PostsControler class", () => {
       });
 
       const req: Partial<Request> = {
-        body: {},
+        params: { id: `${post1.id}` },
       };
 
       const res: Partial<Response> = {
