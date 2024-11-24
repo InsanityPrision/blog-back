@@ -10,4 +10,6 @@ postRouter.get("/", postController.get);
 
 postRouter.post("/", postController.post);
 
+postRouter.delete("/:id", postController.delete);
+
 export default postRouter;

@@ -2,7 +2,7 @@ import { type Request, type Response } from "express";
 import Post from "../../Post/Post";
 import PostControler from "../PostsControler";
 
-describe("Given the method post of PostController", () => {
+describe("Given the method post of PostsControler", () => {
   describe("When it receives a request", () => {
     const post1 = new Post("I like cats", "", "LoverCats04", {
       imageUrl: "",
